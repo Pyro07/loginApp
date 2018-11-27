@@ -10,7 +10,6 @@
 		4E1778162FDAD2B9569D1FB4 /* Pods_loginAppV1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE8F1A3ED959DFFE84FF3A9 /* Pods_loginAppV1Tests.framework */; };
 		674E87FB218C7C8F009C2C71 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674E87FA218C7C8F009C2C71 /* HomePageViewController.swift */; };
 		6759321A217DE9A600D56D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67593218217DE9A600D56D39 /* Main.storyboard */; };
-		6759321C217DEA7D00D56D39 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6759321B217DEA7D00D56D39 /* OnboardingView.swift */; };
 		6759321E217E381A00D56D39 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6759321D217E381A00D56D39 /* MainPageViewController.swift */; };
 		6765A63A218DCE1200761CFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6765A639218DCE1200761CFA /* GoogleService-Info.plist */; };
 		67BEF3B12180F42100F17EBE /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BEF3B02180F42100F17EBE /* ForgotPasswordViewController.swift */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		674E87FA218C7C8F009C2C71 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		67593219217DE9A600D56D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6759321B217DEA7D00D56D39 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		6759321D217E381A00D56D39 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		6765A639218DCE1200761CFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		67BEF3B02180F42100F17EBE /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				67EF5262217A45B300E3F078 /* ViewController.swift */,
-				6759321B217DEA7D00D56D39 /* OnboardingView.swift */,
 			);
 			path = IntroViewController;
 			sourceTree = "<group>";
@@ -440,7 +437,6 @@
 				674E87FB218C7C8F009C2C71 /* HomePageViewController.swift in Sources */,
 				67BEF3B12180F42100F17EBE /* ForgotPasswordViewController.swift in Sources */,
 				67CB715E21848454009662EE /* SignInViewController.swift in Sources */,
-				6759321C217DEA7D00D56D39 /* OnboardingView.swift in Sources */,
 				67EF5263217A45B300E3F078 /* ViewController.swift in Sources */,
 				67EF5261217A45B300E3F078 /* AppDelegate.swift in Sources */,
 			);

@@ -18,6 +18,7 @@ class HomePageViewController: UIViewController {
        //view.addSubview(backButton)
        setupLayout()
        setupLayout2()
+       setupBottomControl()
     }
     
     let backgroundView : UIImageView = {
@@ -77,6 +78,22 @@ class HomePageViewController: UIViewController {
         return label
     }()
     
+    fileprivate func setupBottomControl(){
+        let bottomControlStackView = UIStackView(arrangedSubviews: [backButton])
+        bottomControlStackView.translatesAutoresizingMaskIntoConstraints = false
+        bottomControlStackView.distribution = .equalSpacing
+        bottomControlStackView.axis = .vertical
+        view.addSubview(bottomControlStackView)
+        NSLayoutConstraint.activate([
+            bottomControlStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -40),
+            bottomControlStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            bottomControlStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            bottomControlStackView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 80),
+            bottomControlStackView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -80),
+            bottomControlStackView.heightAnchor.constraint(equalToConstant: 40)
+            ])
+    }
+    
     private func setupLayout(){
         let container = UIView()
         view.addSubview(container)
@@ -101,7 +118,7 @@ class HomePageViewController: UIViewController {
         containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         containerView.addSubview(lblText)
-        //containerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        containerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
         
         lblText.centerXAnchor.constraint(equalTo: containerView.centerXAnchor).isActive = true
         lblText.centerYAnchor.constraint(equalTo: containerView.centerYAnchor).isActive = true

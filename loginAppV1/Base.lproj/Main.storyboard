@@ -17,36 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9DU-fy-WbS" customClass="OnboardingView" customModule="loginAppV1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <viewLayoutGuide key="safeArea" id="HnO-B4-RrG"/>
-                            </view>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5es-m8-W3d">
-                                <rect key="frame" x="105" y="425" width="111" height="40"/>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcB-Wa-j3B">
+                                <rect key="frame" x="110" y="438" width="100" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="Get Started">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="getStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNn-zm-TKl"/>
+                                    <action selector="GetStartedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jU8-IS-EHA"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="9DU-fy-WbS" secondAttribute="top" constant="20" id="0lQ-6J-JA5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9DU-fy-WbS" secondAttribute="trailing" id="ZiK-vp-4yL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9DU-fy-WbS" secondAttribute="bottom" id="tVX-dP-ghM"/>
-                            <constraint firstItem="9DU-fy-WbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zdc-vS-x7A"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ieh-eW-4gd"/>
                     <connections>
-                        <outlet property="getStartedButtonOut" destination="5es-m8-W3d" id="4Qp-1f-CED"/>
-                        <outlet property="onboardingView" destination="9DU-fy-WbS" id="LXl-qS-gBD"/>
+                        <outlet property="GetStartedOut" destination="fcB-Wa-j3B" id="EvL-ka-a9J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
